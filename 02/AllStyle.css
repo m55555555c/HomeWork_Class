@@ -1,0 +1,602 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+:root{
+
+--primary-100:#F5FEE7;
+--primary-200:#F8FEC5;
+--primary-300:#C0FA73;
+--primary-400:#57A203;
+--primary-500:#477A11;
+--Neutral-0:#FFFFFF;
+--Neutral-100:#F8F9FA;
+--Neutral-200:#E9ECEF;
+--Neutral-300:#DEE2E6;
+--Neutral-400:#CED4DA;
+--Neutral-500:#ADB5BD;
+--Neutral-600:#6C757D;
+--Neutral-700:#495057;
+--Neutral-800:#343A40;
+--Neutral-900:#212529;
+--Danger-300:#D74F4F;
+
+
+
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* 版型對應字體 */
+
+.h2
+{
+  	line-height: 1.2;
+	letter-spacing: 0.05em;
+	font-size: 32px;
+
+
+}
+
+
+
+.h3
+{
+  	line-height: 1.2;
+	letter-spacing: 0.05em;
+	font-size: 28px;
+
+
+}
+
+
+.h4
+{
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+	font-size: 24px;
+
+}
+
+.h6
+{
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+}
+
+.md
+
+{
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+
+}
+
+
+.sm
+{
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	font-size: 14px;
+}
+/* 版型對應字體 */
+
+
+/* 字型顏色 */
+
+.text-primary
+{
+	color:var(--Neutral-900);
+}
+
+.text-danger300
+{
+	color: var(--Danger-300);
+}
+
+.text-secondary
+{
+	color:var(--Neutral-600);
+
+}
+
+.text-muted
+{
+	color:var(--Neutral-500);
+}
+
+.text-highlight
+{
+	color: var(--primary-400);
+}
+
+/* 字型顏色 */
+
+/* 字重 */
+
+
+.fw-400
+{
+	font-weight: 400;
+}
+
+.fw-500
+{
+	font-weight: 500;
+}
+.fw-700
+{
+	font-weight: 700;
+}
+
+
+/* 字重 */
+
+
+
+
+img
+{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* 通用盒 */
+
+.container
+{
+	/* background: red; */
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.row
+{
+	/* background: yellow; */
+	display:flex;
+	flex-wrap: wrap;
+	margin:0 -12px;
+
+}
+
+
+.col-1
+{
+	/* background: blue; */
+	padding: 0 12px;
+	width:calc(100%/12);
+
+}
+
+
+.col-2
+{
+	/* background: blue; */
+	padding: 0 12px;
+	width:calc(100%/12*2);
+
+}
+
+.col-5
+{
+	/* background: rgb(219, 219, 231); */
+	padding: 0 12px;
+	width:calc(100%/12*5);
+
+}
+
+.width-100
+{
+ width: 100%;
+}
+
+.col-7
+{
+	/* background: blue; */
+	padding: 0 12px;
+	width:calc(100%/12*7);
+
+}
+
+.col-10
+{
+	/* background: blue; */
+	padding: 0 12px;
+	width:calc(100%/12*10);
+
+}
+
+.col-12
+{
+	/* background: blue; */
+	padding: 0 12px;
+	width:calc(100%);
+	
+
+}
+
+/* 通用盒 */
+
+
+/* 工具 */
+
+
+.d-flex
+{
+	display: flex;
+}
+
+
+.align-center
+{
+	align-items: center;
+}
+
+.justify-center
+{
+	justify-content: center;
+}
+
+
+.text-align-center
+{
+  text-align: center;
+}
+
+.line-through
+{
+	text-decoration: line-through;
+}
+
+
+.wrap
+{  
+	flex-wrap: wrap;
+}
+
+
+
+/* 工具 */
+
+/* 工具-位移*/
+
+/* margin */
+
+.ms-auto
+{
+	margin-left: auto;
+}
+
+.mb-4
+{
+	margin-bottom: 4px;
+}
+
+.mb-8
+{
+	margin-bottom: 8px;
+}
+
+.mb-12
+{
+	margin-bottom: 12px;
+}
+
+.mb-16
+{
+	margin-bottom: 16px;
+}
+
+.mb-20
+{
+	margin-bottom: 20px;
+}
+
+
+
+.mb-24
+{
+	margin-bottom: 24px;
+}
+
+
+.mb-32
+{
+	margin-bottom: 32px;
+}
+
+.mb-48
+{
+	margin-bottom: 48px;
+}
+
+.mb-56
+{
+	margin-bottom: 56px;
+}
+
+
+
+.mt-48
+{
+	margin-top: 48px;
+}
+
+
+.me-8
+{
+	margin-right: 8px;
+}
+
+.me-12
+
+{
+	margin-right: 12px;
+}
+
+.me-24
+{
+	margin-right: 24px;
+}
+
+.me-60
+{
+	margin-right: 60px;
+}
+
+.my-8
+{
+	margin: 8px 0;
+}
+
+
+/* margin */
+
+/* gap */
+.gp-8
+{
+	gap: 8px;
+}
+
+
+.gp-20
+{
+	gap: 20px;
+}
+
+/* gap */
+
+/* padding */
+
+.px-8
+{
+	padding: 0 8px;
+}
+
+.px-12
+{
+	padding: 0 12px;
+}
+
+.px-24
+{
+	padding: 0 24px;
+}
+
+.px-64
+{
+	padding: 0 64px;
+}
+
+.py-8
+{
+	padding: 8px 0;
+}
+.py-12
+{
+	padding: 12px 0;
+}
+
+.py-24
+{
+	padding: 24px 0;
+}
+
+.py-64
+{
+	padding: 64px 0;
+}
+
+.p-8
+{
+	padding: 8px;
+}
+
+
+.p-12
+{
+	padding: 12px;
+
+}
+/* padding */
+/* 工具  位移*/
+
+
+.breadcrumb-item + .breadcrumb-item::before
+{
+	content: "/";
+	padding: 0 12px;
+
+}
+
+.breadcrumb-item
+{
+	display: flex;
+}
+
+
+.pagination
+{
+    /* background: gray; */
+}
+
+
+
+
+.pagination li
+{
+    margin-right: 8px;
+}
+
+
+
+.pagination button
+{	
+ border-radius: 4px;
+ border:none;
+ padding: 8px 15px;	
+ cursor: pointer;
+ background: none;
+ background-color: transparent;
+ line-height: 1.5;
+ font-size: 16px;
+
+}
+
+
+.pagination button:hover
+{	
+
+ background-color: var(--Neutral-100);
+
+}
+
+
+.pagination button.active
+{	
+
+ background-color: var(--primary-300);
+
+}
+
+
+.sales-banner
+{
+    width: 100%;
+    height: auto;
+    background:#E8FEC5 ;
+}
+
+
+
+
+.btn-register
+{
+ border-radius: 4px;
+ padding: 12px 24px;	
+ cursor: pointer;
+ background: none;
+ background-color: var(--Neutral-900);
+ line-height: 1.5;
+ font-size: 16px;
+ color: var(--Neutral-0);
+}
+
+
+
+
+
+.product-item-3
+
+{   
+    width: 33.3333333%;
+    padding: 0 12px;
+    background-color: white;
+}
+
+
+.product-item-4
+
+{   
+    width: 25% ;
+    padding: 0 12px;
+    
+
+}
+
+
+
+.product-card
+{
+    /* background: aqua; */
+    text-decoration: none;
+
+}
+
+.product-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
